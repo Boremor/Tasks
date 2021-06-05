@@ -1,0 +1,32 @@
+<h1>Связь с администратором:</h1>
+<form action="/tasks/pr6/z2.php" method="post">
+    <div class="form-group">
+        <label for="surname"><b>Фамилия:</b></label>
+        <input type="text" id="surname" name="surname" placeholder="Фамилия">
+    </div>
+    <div class="form-group">
+        <label for="name"><b>Имя:</b></label>
+        <input type="text" id="name" name="name" placeholder="Имя">
+    </div>
+    <div class="form-group">
+        <label for="patronymic"><b>Отчество:</b></label>
+        <input type="text" id="patronymic" name="patronymic" placeholder="Отчество">
+    </div>
+    <div class="form-group">
+        <label for="email"><b>Адрес электронной почты(e-mail):</b></label>
+        <input type="email" id="email" name="email" placeholder="E-mail">
+    </div>
+    <div class="form-group">
+        <p><label for="message"><b>Вопрос администратору:</b></label></p>
+        <textarea id="message" name="message" placeholder="Вопрос администратору" cols="100" rows="20"></textarea>
+    </div>
+    <input type="submit" value="Отправить" name="btn">
+</form>
+<style>
+    input[type="submit"], input[type="reset"] {
+        cursor: pointer;
+    }
+    label {
+        cursor: pointer;
+    }
+</style>

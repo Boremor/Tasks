@@ -1,0 +1,85 @@
+<h1>Форама регистрации</h1>
+<form class="pr-z1-form" action="/tasks/pr6/z1.php" method="post">
+    <div class="form-group">
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" placeholder="Имя">
+    </div>
+    <div class="form-group">
+        <label for="surname">Ваша фамилия:</label>
+        <input id="surname" type="text" name="surname" placeholder="Фамилия">
+    </div>
+    <div class="form-group">
+        <label for="patronymic">Ваше отчество:</label>
+        <input id="patronymic" type="text" name="patronymic" placeholder="Отчество">
+    </div>
+    <div class="form-group">
+        <p>Укажите пол:</p>
+        <label for="woman">Женский</label>
+        <input id="woman" type="radio" name="gender" value="Женский" checked>
+        <label for="man">Мужской</label>
+        <input id="man" type="radio" name="gender" value="Мужской">
+    </div>
+    <div class="form-group">
+        <p>Укажите возраст:</p>
+        <label for="18-25">18-25</label>
+        <input id="18-25" type="radio" name="age" value="от 18 до 25" checked>
+        <label for="26-35">26-35</label>
+        <input id="26-35" type="radio" name="age" value="от 26 до 35">
+        <label for="36-45">36-45</label>
+        <input id="36-45" type="radio" name="age" value="от 36 до 45">
+        <label for="older">старше 45</label>
+        <input id="older" type="radio" name="age" value="старше 45">
+    </div>
+    <div class="form-group">
+        <p>Знания языков:</p>
+        <label for="russian">Русский</label>
+        <input id="russian" type="checkbox" name="language[]" value="Русский">
+        <label for="english">Английский</label>
+        <input id="english" type="checkbox" name="language[]" value="Английский">
+        <label for="german">Немецкий</label>
+        <input id="german" type="checkbox" name="language[]" value="Немецкий">
+        <label for="french">Францезский</label>
+        <input id="french" type="checkbox" name="language[]" value="Францезский">
+    </div>
+    <div class="form-group">
+        <p>Образование:</p>
+        <label for="middle">Среднее полное</label>
+        <input id="middle" type="checkbox" name="education[]" value="Среднее полное">
+        <label for="spec">Среднеспециальное</label>
+        <input id="spec" type="checkbox" name="education[]" value="Среднеспециальное">
+        <label for="higher">Высшее</label>
+        <input id="higher" type="checkbox" name="education[]" value="Высшее">
+        <label for="graduate">Аспиратура</label>
+        <input id="graduate" type="checkbox" name="education[]" value="Аспиратура">
+    </div>
+    <div class="form-group">
+        <label for="country">Страна проживания:</label>
+        <select name="country" id="country">
+            <option value="Россия">Россия</option>
+            <option value="Швеция">Швеция</option>
+            <option value="Италия">Италия</option>
+            <option value="Казахстан">Казахстан</option>
+            <option value="Армения">Армения</option>
+            <option value="Грузия">Грузия</option>
+            <option value="Украина">Украина</option>
+            <option value="Польша">Польша</option>
+            <option value="Монголия">Монголия</option>
+            <option value="Франция">Франция</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="about">Кратко о себе:<br></label>
+        <textarea name="about" id="about" cols="100" rows="20"></textarea>
+    </div>
+    <input type="submit" value="Войти в систему">
+    <input type="reset" value="Сбросить данные">
+</form>
+<style>
+    label {
+        cursor: pointer;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        cursor: pointer;
+    }
+</style>

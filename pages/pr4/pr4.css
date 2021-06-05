@@ -1,0 +1,14 @@
+.red {
+    color: red;
+}
+
+.func {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.func p {
+    margin: 0;
+    padding: 0;
+}
